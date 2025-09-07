@@ -19,7 +19,7 @@ int main(){
     University student1;
     student1.SetName("Aayush");
     student1.SetRanking(100);
-    student1.Name //error shown as it cannot be accessed
-    
+    //student1.Name //error shown as it cannot be accessed
+
     return 0;
 }
