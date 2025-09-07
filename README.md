@@ -1,2 +1,3 @@
 # OOPS
-Github repo for the OOPS course
+Github repository for the OOPS
+
