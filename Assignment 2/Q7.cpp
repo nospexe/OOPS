@@ -5,7 +5,7 @@ using namespace std;
 class List{
 private:
     vector<int> Data;
-    vector<int> OG_Data; 
+    vector<int> OG_Data; //to retain a copy useful for resetting the data
 
 public:
 
@@ -38,7 +38,7 @@ public:
                     flag = true;
                 }
             }
-            if (!flag) break;
+            if (!flag) break; // if it is sorted, break
         }
     }
 
@@ -72,7 +72,7 @@ int main() {
     myList.bubblesort();
     myList.display();
 
-    myList.reset();
+    myList.reset(); // resetting data to original
 
     cout << "Original list:" << endl;
     myList.display();

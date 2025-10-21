@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Sports;
+class Sports; // defined inside student so must be declared
 
 class Student {
 private:
@@ -34,7 +34,7 @@ public:
     friend void displayCombinedReport(const Student& s, const Sports& sp);
 };
 
-void displayCombinedReport(const Student& s, const Sports& sp) {
+void displayCombinedReport(const Student& s, const Sports& sp) { // friend function which displays both class methods
     cout << "Combined Report \n";  
     cout << "Name: " << s.Name << endl;
     cout << "Marks: " << s.Marks << endl;
@@ -47,7 +47,7 @@ int main() {
     Student student1("Aayush", 85);
     Sports sports1("Basketball", 92);
 
-    displayCombinedReport(student1, sports1);
+    displayCombinedReport(student1, sports1); //friend function called
 
     return 0;
 }

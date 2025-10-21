@@ -43,7 +43,7 @@ class SportsPerson : public Person, public Athlete{
     public:
 
     SportsPerson(string name, int age, string gender, string sport, int trophies)
-            : Person(name, age, gender), Athlete(sport, trophies){
+            : Person(name, age, gender), Athlete(sport, trophies){ //Multiple inheritence, both constructors called
             cout << "SportsPerson constructor" << endl;
     }
 
@@ -61,7 +61,7 @@ class SportsPerson : public Person, public Athlete{
 int main() {
     SportsPerson sp("Serena", 40, "Female", "Tennis", 73);
     cout << endl;
-    sp.displayInfo();
+    sp.displayInfo(); // overrides parent to display
     cout << endl;
     sp.playSport();
 
