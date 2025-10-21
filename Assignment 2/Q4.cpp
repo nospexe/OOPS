@@ -52,7 +52,7 @@ class Manager : public Employee{
             Bonus = bonus;
             Subordinates = subs;
             cout << "Hello, I am a manager \n";
-        }
+        } //Multilevel Inheritence
 
         void displayInfo(){
             Employee::displayInfo();

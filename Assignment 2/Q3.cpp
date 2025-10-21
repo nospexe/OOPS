@@ -23,7 +23,7 @@ class Rectangle : public Shape{
     public:
         int Length;
         int Width;
-        Rectangle(double length, double width): Shape("Rectangle"){
+        Rectangle(double length, double width): Shape("Rectangle"){//callint the parent constructor
             Length = length;
             Width = width;
         }
